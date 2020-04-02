@@ -18,8 +18,12 @@ public class MainActivity extends AppCompatActivity {
 
         //On rtecupere notre viewFlipper
         ViewFlipper viewFlipper = findViewById(R.id.vfpFlipper);
+
+        //Transition de page
         viewFlipper.setInAnimation(AnimationUtils.loadAnimation(context,android.R.anim.fade_in));
         viewFlipper.setOutAnimation(AnimationUtils.loadAnimation(context,android.R.anim.fade_in));
+
+        //Demarrer automatique et intervalle entre chaque slide
         viewFlipper.setAutoStart(true);
         viewFlipper.setFlipInterval(2000);
 
